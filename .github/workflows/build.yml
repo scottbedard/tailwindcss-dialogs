@@ -12,7 +12,13 @@ jobs:
         with:
           version: 8
 
-      - name: Build
+      - name: Build plugin
         run: |
+          pnpm install
+          pnpm run build
+
+      - name: Build sandbox
+        run: |
+          cd sandbox
           pnpm install
           pnpm run build
