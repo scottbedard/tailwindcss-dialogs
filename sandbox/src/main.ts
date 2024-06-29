@@ -1,1 +1,3 @@
-console.log('Soon...')
+import './style.css'
+
+console.log('ok...')
