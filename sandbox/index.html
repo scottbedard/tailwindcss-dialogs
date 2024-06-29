@@ -4,39 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@bedard/tailwindcss-dialogs</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=quicksand:500&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body class="overflow-hidden">
     <div class="bg-gray-50 h-screen overflow-hidden">
       <img class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" src="/beams.jpg" width="1308" />
 
       <div class="absolute inset-0 bg-[url(/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
     
-      <div class="absolute z-10">
-        <button onclick="document.querySelector('dialog').showModal()">
-          Click me
-        </button>
+      <div class="absolute inset-0 px-6 py-12 xl:py-20">
+        <div class="flex flex-col gap-y-6 h-screen items-center max-w-screen-xl mx-auto text-center xl:gap-y-12">
+            <a
+              class="font-medium text-lg
+              hover:text-rose-500"
+              href="https://github.com/scottbedard/tailwindcss-dialogs"
+              target="_blank">
+              @bedard/tailwindcss-dialogs
+            </a>
 
-        <dialog
-          class="bg-transparent allow-discrete duration-500 ease-out max-w-screen-sm transition-all opacity-0 -translate-y-6 backdrop:bg-rose-300/0 backdrop:transition-all backdrop:duration-500 backdrop:ease-out open:backdrop:bg-rose-300/20 open:opacity-100 open:translate-y-0 open:from:-translate-y-6 open:from:backdrop:bg-rose-300/0"
-          onclick="this.close()">
-          <div
-            class="bg-gray-100 drop-shadow-xl m-6 gap-6 grid p-6 rounded-lg"
-            onclick="event.stopPropagation()">
-            <h2 class="font-medium tracking-wide">@bedard/tailwindcss-dialogs</h2>
-
-            <div class="leading-loose text-sm">
-              Thes utilities enable descrete animation of dialog components. Now, it's time to make something beautiful.
-            </div>
-
-            <div class="flex justify-end text-sm">
-              <a class="flex gap-x-1 items-center hover:text-rose-500" href="#">
-                View repository
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </a>
-            </div>
+            <button
+              class="text-3xl tracking-wider hover:text-rose-500"
+              onclick="document.querySelector('dialog').showModal()">
+              Click here to trigger a dialog
+            </button>
           </div>
-        </dialog>
+        </div>
       </div>
+
+      <dialog
+        class="bg-transparent allow-discrete duration-500 ease-out max-w-screen-sm transition-all opacity-0 -translate-y-6 backdrop:bg-rose-300/0 backdrop:transition-all backdrop:duration-500 backdrop:ease-out open:backdrop:bg-rose-300/20 open:opacity-100 open:translate-y-0 open:from:-translate-y-6 open:from:backdrop:bg-rose-300/0"
+        onclick="this.close()">
+        <div
+          class="bg-gray-100 drop-shadow-xl m-6 gap-6 grid p-6 rounded-lg"
+          onclick="event.stopPropagation()">
+          <div class="leading-loose">
+            Let's build some happy little clouds up here. Give him a friend, we forget the trees get lonely too. I'm sort of a softy, I couldn't shoot Bambi except with a camera. All of these beautiful, beautiful things will happen. Anything. As long as you believe.
+          </div>
+
+          <div class="flex justify-end">
+            <a
+              class="flex gap-x-1 items-center tracking-wide hover:text-rose-500"
+              href="https://github.com/scottbedard/tailwindcss-dialogs"
+              target="_blank">
+              Visit repository <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </dialog>
     </div>
 
     <script type="module" src="/src/main.ts"></script>
