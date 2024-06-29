@@ -1,0 +1,20 @@
+{
+  "author": "Scott Bedard",
+  "description": "Tailwind utilities for working with dialog elements",
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "rollup": "^4.18.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "tailwindcss": "^3.4.4"
+  },
+  "license": "MIT",
+  "main": "dist/tailwindcss-dialogs.js",
+  "module": "dist/tailwindcss-dialogs.mjs",
+  "name": "@bedard/tailwindcss-dialogs",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "typings": "dist/tailwindcss-dialogs.d.ts",
+  "version": "0.1.0"
+}
