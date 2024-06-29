@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@bedard/tailwindcss-dialogs':
+        specifier: link:..
+        version: link:..
     devDependencies:
       autoprefixer:
         specifier: ^10.4.19
