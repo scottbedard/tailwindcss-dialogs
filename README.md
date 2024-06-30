@@ -1,5 +1,9 @@
 # `@bedard/tailwindcss-dialogs`
 
+[![Build](https://github.com/scottbedard/tailwindcss-dialogs/actions/workflows/build.yml/badge.svg)](https://github.com/scottbedard/tailwindcss-dialogs/actions/workflows/build.yml)
+[![NPM](https://img.shields.io/npm/v/%40bedard%2Ftailwindcss-dialogs)](https://www.npmjs.com/package/@bedard/tailwindcss-dialogs)
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/scottbedard/tailwindcss-dialogs/blob/main/LICENSE)
+
 Tailwind CSS utilities for styling and animating dialog elements.
 
 [View sandbox &rarr;](https://main--tailwindcss-dialogs.netlify.app/)
